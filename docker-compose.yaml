@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    image: dtekcth/chalmersrooms
+    command: "node dist/app.js"
+    build: .
+    ports:
+      - "4002:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000

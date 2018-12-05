@@ -1,0 +1,32 @@
+.DayPickerInput input
+  @apply appearance-none bg-grey-lighter rounded shadow p-2 text-lg font-bold text-grey-darker w-full
+
+.DayPicker .DayPicker-Week .DayPicker-Day
+    &:hover 
+      background-color: color(config("colors.dtek") a(0.2)) !important
+
+    &[aria-selected=true]
+      background-color: config("colors.dtek") !important
+
+.rc-time-picker-input
+  @apply appearance-none bg-grey-lighter rounded shadow p-2 text-lg font-bold text-grey-darker h-auto border-none
+
+.rc-time-picker-panel-inner
+  @apply shadow
+
+  .rc-time-picker-panel-select
+    @apply overflow-x-hidden
+
+  .rc-time-picker-panel-input-wrap
+    @apply p-0
+
+    .rc-time-picker-panel-clear-btn
+      @apply my-2 font-bold
+
+      .rc-time-picker-panel-clear-btn-icon:after
+        @apply text-xl
+
+        content: "✕"
+
+    .rc-time-picker-panel-input
+      @apply appearance-none bg-grey-lighter rounded p-2 text-lg font-bold text-grey-darker h-auto

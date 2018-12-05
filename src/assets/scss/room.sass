@@ -1,0 +1,38 @@
+$menu-anim-duration: 0.25s
+
+.room-page
+  .room-menu
+    transition: transform $menu-anim-duration
+    transform: translateY(100%)
+
+    .menu-bar
+      transform: translateY(-100%)
+      top: 4px
+
+  .room-game
+    transition: top $menu-anim-duration
+    position: relative
+    top: 0
+
+  &.menu-open
+    .room-game
+      top: -100px
+
+    .room-menu
+      transform: translateY(0)
+
+
+@keyframes host-star
+  from
+    transform: rotate(0)
+
+  to
+    transform: rotate(360deg)
+
+.host-star1
+  animation: host-star 20s infinite
+  animation-timing-function: linear
+
+.host-star2
+  animation: host-star 20s infinite reverse
+  animation-timing-function: linear

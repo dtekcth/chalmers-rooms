@@ -1,0 +1,127 @@
+@import "fonts.sass"
+@import "components/index.sass"
+
+@import "~react-day-picker/lib/style.css"
+@import "~rc-time-picker/assets/index.css"
+
+body
+  @apply .bg-grey-lighter
+
+  font-family: "Museo Sans", "Helvetica Neue", Arial, Helvetica, sans-serif
+  user-select: none
+
+html
+  font-size: 90%
+
+form
+  margin: 0
+
+a
+  color: inherit
+  text-decoration: none
+  outline: none
+
+*:focus
+  outline: none
+
+button:focus
+  outline: none
+
+button:disabled
+  @apply .cursor-default
+
+.p-2px
+  padding: 2px
+
+.link-dtek
+  @apply .transition-colors .text-dtek
+
+  &:hover
+    @apply .text-dtek-dark
+
+.label
+  @apply .rounded-full .font-semibold .text-sm
+
+  padding: 0.35rem 0.75rem
+
+.absolutex-center
+  position: absolute
+  left: 50%
+  transform: translate(-50%)
+
+.absolutey-center
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+
+.absolute-center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+.table-reset
+  border-spacing: 0
+
+.table-auto
+  table-layout: auto
+
+.ellipsis
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+.text-justify-word
+  text-align: justify
+  text-justify: inter-word
+
+.text-justify-character
+  text-align: justify
+  text-justify: inner-character
+
+.transition-opacity
+  transition: opacity 0.2s
+
+.transition-colors
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s
+
+.transition-shadows
+  transition: box-shadow 0.2s
+
+.hide-scroll::-webkit-scrollbar
+  display: none
+
+
+.page-content
+  margin-top: -4rem
+  min-height: 200px
+
+header
+  height: 150px
+
+  .title
+    margin: 0
+    margin-bottom: 4rem
+
+.fade-enter-active
+  opacity: 1
+  transition: opacity 250ms ease-out, transform 250ms ease-out
+
+.fade-exit
+  opacity: 1
+
+.fade-exit-active
+  opacity: 0.01
+  transition: opacity 250ms ease-out
+
+
+@keyframes item-transition-slide
+  from
+    transform: translateY(60px)
+  to
+    transform: translateY(0)
+
+.item-transition
+  transform: translateY(60px)
+  animation: item-transition-slide ease-out 500ms
+  animation-fill-mode: forwards
