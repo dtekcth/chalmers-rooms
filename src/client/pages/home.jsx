@@ -274,7 +274,7 @@ class HomePage extends Component {
     }
 
     return (
-      <div>
+      <div className="min-h-screen pb-7 relative">
         <header className="bg-dtek flex items-center justify-center">
           <h1 className="block text-white text-center title text-3xl sm:text-4xl">
             <FontAwesomeIcon icon={["far", "calendar-alt"]} />
@@ -285,7 +285,7 @@ class HomePage extends Component {
           </h1>
         </header>
 
-        <div className="mb-6 page-content mx-auto w-full max-w-md">
+        <div className="page-content mx-auto w-full max-w-md">
           <div className="mx-3 bg-white rounded shadow-lg">
             <div className="p-3">
               <div className="styled-autosuggest">
@@ -363,6 +363,18 @@ class HomePage extends Component {
           <TransitionGroup>
             {freeTimesElems}
           </TransitionGroup>
+        </div>
+
+        <div className="absolute text-center text-grey pin-b pin-x mb-2">
+          <a
+            href="https://github.com/dtekcth/chalmers-rooms"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={["fab", "github"]} />
+            <span className="ml-1">
+              Find me on Github!
+            </span>
+          </a>
         </div>
       </div>
     );
