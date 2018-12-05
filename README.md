@@ -4,6 +4,8 @@ This tool is useful for finding unbooked rooms on Chalmers.
 It uses the TimeEdit API to find reserved rooms and then looking for gaps between the reservations.
 Currently it has a button to add all group rooms commonly used by computer engineering students,
 however bookmarks will probably be supported in the future to easily save rooms.
+Note that the TimeEdit API does not provide any information on "first come" rooms, only rooms that can be booked can
+be found using this tool.
 
 The application is built using Express as the backend server and has a REST api that the frontend uses
 to fetch the rooms (will probably be switched out with GraphQL later).
