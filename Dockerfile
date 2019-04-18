@@ -1,5 +1,7 @@
 FROM node:8.14-alpine
 
+RUN apk --update add tzdata
+
 # Create app directory
 RUN mkdir -p /usr/app
 WORKDIR /usr/app
