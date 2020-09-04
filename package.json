@@ -86,7 +86,7 @@
     "eslint-plugin-babel": "^5.1.0",
     "glob-all": "^3.1.0",
     "laravel-mix": "^3.0.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "postcss-color-function": "^4.0.1",
     "postcss-momentum-scrolling": "^1.4.8",
     "tailwindcss": "^0.6.4"
