@@ -47,7 +47,7 @@
     "get-form-data": "^2.0.0",
     "http-errors": "~1.6.2",
     "lodash": "^4.17.13",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "morgan": "^1.9.1",
     "query-string": "^6.2.0",
     "rc-time-picker": "^3.4.0",
