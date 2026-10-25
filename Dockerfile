@@ -1,4 +1,4 @@
-FROM node:8.14-alpine
+FROM node:8.14-alpine@sha256:dbe70ff383399ad9af341a44122700fece093ed4a2f794a88919caba59ba903e
 
 RUN apk --update add tzdata
 
